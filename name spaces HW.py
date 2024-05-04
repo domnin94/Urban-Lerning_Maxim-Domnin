@@ -5,3 +5,5 @@ def test_fuction(x):
     inner_function(x)
 b = test_fuction(8)
 print(b)
+# inner_function() - не выводится вне функции test_function,
+# так как она существует локально в объемлющей области видимости функции test_function
