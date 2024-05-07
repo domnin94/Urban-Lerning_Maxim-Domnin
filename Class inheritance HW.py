@@ -8,10 +8,12 @@ class Car:
             self.__class__.__name__, self.price, self.horse_power)
 class Nissan(Car):
     def horse_power(self):
+        self.price = 9500000
         self.horse_power = 100
 
 class Kia(Car):
     def horse_power(self):
+        self.price = 9000000
         self.horse_power = 145
 
 car = Car()
