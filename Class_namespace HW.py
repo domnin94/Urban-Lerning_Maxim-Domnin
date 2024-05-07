@@ -1,12 +1,12 @@
 class Building:
-    total = 0
-    def __init__(self):
-        Building.total += 1
+    def __init__(self, name: str):
+        self.building = name
+    def __str__(self):
+        return "Здание 1:" + self.building
 
-district = []
-district_size = 40
-while len(district) < district_size:
-    new_build = Building()
-    district.append(new_build)
-print(Building.total)
+    __repr__ = __str__
+
+Buildings = [Building(f"Здание_{i+1}") for i in range(40)]
+print(Buildings)
+
 
