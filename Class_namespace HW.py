@@ -1,12 +1,8 @@
 class Building:
-    def __init__(self, name: str):
-        self.building = name
-    def __str__(self):
-        return "Здание 1:" + self.building
-
-    __repr__ = __str__
-
-Buildings = [Building(f"Здание_{i+1}") for i in range(40)]
-print(Buildings)
-
-
+    total = 0
+    def __init__(self):
+        while self.total < 40:
+            self.total += 1
+            print('Object', self.total)
+build = Building()
+print(build)
