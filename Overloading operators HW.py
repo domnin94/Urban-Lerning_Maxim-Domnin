@@ -9,8 +9,6 @@ class Building:
 new_building = Building()
 old_building = Building()
 
-if Building.__eq__(self=new_building, other=old_building):
-    print('Thrue')
-else:
-    print('False')
+print(Building.__eq__(self=new_building, other=old_building))
+
 
