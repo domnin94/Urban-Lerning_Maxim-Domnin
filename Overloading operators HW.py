@@ -3,13 +3,14 @@ class Building:
         self.numberOfFloors = 678
         self.buldingType = 'fives'
     def __eq__(self, other):
-        return self.numberOfFloors and other.buldingType
+        return self.numberOfFloors == other.numberOfFloors and self.buldingType == other.buldingType
 
 
 new_building = Building()
 old_building = Building()
 
-if new_building == old_building:
-    print('Perfect')
+if Building.__eq__(self=new_building, other=old_building):
+    print('Thrue')
 else:
-    print('Loser')
+    print('False')
+
