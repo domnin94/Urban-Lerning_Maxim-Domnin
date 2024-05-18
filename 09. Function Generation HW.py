@@ -33,9 +33,11 @@ class Home:
 
 
     def __call__(self, b):
+        print(f'Стороны: {self.a} и {b}')
         return self.a * b
 
 
-result = Home(a=5)
-result1 = result(b=5)
+result = Home(a=3)
+result1 = result(b=7)
+
 print(f'Площадь: {result1}')
