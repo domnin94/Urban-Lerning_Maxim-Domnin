@@ -17,14 +17,15 @@ class Knights(Thread):
         self.day += 1
         self.enemies -= self.skill
         print('{}, сражается {} день(дня), врагов осталось {}'.format(
-                self.name, self.day, self.enemies))
+                self.name, self.day, self.enemies), flush=True)
         while self.enemies > 0:
+            time.sleep(2)
             self.day += 1
             self.enemies -= self.skill
             print('{}, сражается {} день(дня), врагов осталось {}'.format(
-                self.name, self.day, self.enemies))
+                self.name, self.day, self.enemies), flush=True)
             if self.enemies == 0:
-                print('{} одержал победу, спустя {} дней!'.format(self.name, self.day))
+                print('{} одержал победу, спустя {} дней!'.format(self.name, self.day), flush=True)
 
 
 
