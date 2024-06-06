@@ -14,10 +14,6 @@ class Knights(Thread):
 
     def run(self):
         print(f'{self.name}, на нас напали!')
-        self.day += 1
-        self.enemies -= self.skill
-        print('{}, сражается {} день(дня), врагов осталось {}'.format(
-                self.name, self.day, self.enemies), flush=True)
         while self.enemies > 0:
             time.sleep(2)
             self.day += 1
